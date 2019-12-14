@@ -44,6 +44,9 @@ public class Sprite {
     public void setX(double x) {
         this.x = x;
     }
+    public double getX() {
+        return x;
+    }
 
     public double getY() {
         return y;
@@ -126,6 +129,7 @@ public class Sprite {
 
         x = x + velocityX * ms/1000.0;
         y = y + velocityY * ms/1000.0;
+
     }
     public void draw (Canvas canvas) {
         Paint p = new Paint();
